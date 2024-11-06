@@ -1,0 +1,137 @@
+/* Contact Section */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure the section takes full height */
+    color: white;
+}
+
+/* Title: Central, bigger, with shadow */
+.contact-section h1 {
+    font-size: 3.5em;  /* Slightly increase the size for prominence */
+    color: #f39c12;
+    margin-bottom: 40px;  /* Add more space below the title */
+    text-align: center;
+    width: 100%;
+    text-shadow: 0 2px 4px rgba(255, 255, 255, 0.8);
+    margin-top: 70px; 
+}
+
+/* Contact Form & Info Layout */
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
+    width: 90%; /* Increased width for better spacing */
+    max-width: 1400px;  /* Larger width for better alignment */
+    gap: 185px; /* Add significant spacing between form and contact info */
+    margin: 0 auto;
+}
+
+/* Contact Form Styles */
+.contact-form {
+    flex: 1;
+    padding: 30px;
+    max-width: 600px;  /* Limit the form width for balance */
+}
+
+.contact-form h2 {
+    color: #f39c12;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+.contact-form p a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4em;  /* Ensure consistency with other info */
+    transition: color 0.3s ease;
+}
+
+.contact-form p a:hover {
+    color: #f39c12;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0; /* Add more margin between fields */
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1.2em;
+}
+
+/* Center the Button */
+.buttons {
+    display: flex;
+    justify-content: center; /* Center the button */
+    margin-top: 30px;
+}
+
+.email-btn {
+    background-color: #f39c12;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s ease;
+    font-size: 1.2em;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.email-btn:hover {
+    background-color: #f57208;
+}
+
+/* Contact Info Styles */
+.contact-info {
+    flex: 1;
+    padding: 30px;
+    max-width: 600px;  /* Limit the contact info width for balance */
+}
+
+.contact-info h2 {
+    color: #f39c12;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+.contact-info p, .contact-info a {
+    font-size: 1.4em;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 20px;  /* Add more margin between contact info items */
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #f57208;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form, .contact-info {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .email-btn {
+        width: 100%;
+        margin: 5px 0;
+    }
+}

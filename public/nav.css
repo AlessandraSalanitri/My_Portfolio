@@ -1,0 +1,110 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: radial-gradient(ellipse at bottom, 
+                rgba(245, 244, 240, 0.8) 10%, /* Darker towards the bottom */
+                rgba(43, 128, 226, 0.3) 30%, /* Adding some blue tone */
+                rgba(24, 23, 23, 0.1) 70%, /* Soft white light at the bottom */
+                rgba(0, 0, 0, 0.9) 100%); /* Darker edges */
+    background-color: #000;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    html, body {
+        height: auto; /* Allow content to scroll */
+    }
+}
+
+
+/* Default Menu Style */
+nav {
+    display: flex;
+    justify-content: center; /* Center the nav links */
+    align-items: center;
+    padding: 20px;
+    background-color: transparent;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+    position: fixed; /* Ensure nav is fixed to the top */
+}
+
+/* Nav links for larger screens */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+.nav-links li a {
+    color: #f39c12;
+    text-decoration: none;
+    font-size: 2.2em;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #f57208;
+    font-weight: bold;
+}
+
+/* Menu icon for mobile */
+.menu-icon {
+    display: none; /* Hide icon on larger screens */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.menu-icon .bar {
+    height: 4px;
+    width: 100%;
+    background-color: #f39c12;
+    border-radius: 10px;
+}
+
+/* Responsive Navigation for mobile */
+@media (max-width: 768px) {
+    /* Hide the menu links by default on mobile */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 100%;
+        text-align: center;
+    }
+
+    /* hamburger menu icon */
+    .menu-icon {
+        display: flex;
+        position: absolute;
+        left: 10px; /* Adjust to fit your design */
+        top: 20px;  /* Add some padding from the top */
+    }
+
+    /* When the menu is active */
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li a {
+        font-size: 1.8em; /* Adjust font size for mobile */
+        padding: 15px 0;
+    }
+}
+
+

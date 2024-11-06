@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alessandra's Portfolio</title>
+    <link rel="stylesheet" href="public/main.css">
+    <link rel="stylesheet" href="public/nav.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/main">Home</a></li>
+            <li><a href="/about">About Me</a></li>
+            <li><a href="/loading">Projects</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <!-- Left Side Content -->
+        <div class="left-content">
+            <h1>Alessandra</h1>
+            <h1>Salanitri</h1>
+            <p class="profession">
+                Cybersecurity Analyst
+                <span class="line-break">& Software Engineer</span>
+            </p>
+            <p class="tagline">Securing the future, one byte at a time.</p>
+            <a href="/loading.html" class="cta-button">My Projects</a>
+        </div>
+
+        <!-- Right Side Content -->
+        <div class="right-content">
+            <div class="certifications">
+                <div class="certification">
+                    <a href="https://www.credly.com/badges/59a7c301-3dc9-4c02-b3f5-367b4e240e2b/linked_in_profile">CCNA</a>
+                    <img src="public/images/ccnacert (1).png" alt="CCNA Certification">                  
+                </div>
+
+                <div class="certification">
+                    <a href="https://www.credly.com/badges/2661fd87-6bd7-459f-8e42-5e16ad223cec/linked_in_profile">Google Cybersecurity</a>
+                    <img src="public/images/googlecert.png" alt="Google Cybersecurity Certification">
+                </div>
+
+                <div class="certification">
+                    <a href="https://www.coursera.org/account/accomplishments/verify/NZD7TQLN2LRA">Google AI Essential</a>
+                    <img src="public/images/AIcert.png" alt="Google Cybersecurity Certification">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const menuIcon = document.querySelector('.menu-icon');
+        const navLinks = document.querySelector('.nav-links');
+    
+        menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+    
+</body>
+</html>

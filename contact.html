@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="public/nav.css">
+    <link rel="stylesheet" href="public/contact.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/main">Home</a></li>
+            <li><a href="/about">About Me</a></li>
+            <li><a href="/loading">Projects</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <h1>Contact me</h1>
+        <div class="contact-content">
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h2>Email</h2>
+            <p><a href="mailto:alessandra.salanitri94@gmail.com">alessandra.salanitri94@gmail.com</a></p>
+            
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <textarea id="message" placeholder="Message" rows="5" required></textarea>
+                <div class="buttons">
+                    <button type="button" class="email-btn" onclick="sendEmail()">Send Email</button>
+                </div>
+            </form>
+        </div>
+
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <h2>Phone</h2>
+                <p>+44 07555 658661</p>
+
+                <h2>WhatsApp</h2>
+                <p>+44 07715 700406</p>
+
+                <h2>LinkedIn</h2>
+                <p><a href="https://www.linkedin.com/in/alessandra-salanitri-solent94" target="_blank">Visit My LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Script for Navigation Bar functionality and external JS -->
+    <script>
+        // Menu icon toggle for mobile navigation
+        const menuIcon = document.querySelector('.menu-icon');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+    
+    <!-- Load the external contact.js -->
+    <script src="public/contact.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,266 @@
+/* Navbar Spacing Fix */
+.project-section {
+    padding-top: 100px; /* Adjusts for fixed navbar height */
+    padding-bottom: 40px;
+    min-height: 100vh;
+}
+
+.project-section h1 {
+    text-align: center;
+    margin-top: 80px; /* Adjusted for space with navbar */
+    font-size: 3em;
+    color: #f39c12;
+    text-shadow: 0 2px 4px rgba(255, 255, 255, 0.8);
+}
+
+/* Columns for Projects */
+.columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+/* Project Columns */
+.project-column {
+    flex: 1;
+    min-width: 48%;
+    max-width: 48%;
+    padding: 20px;
+}
+
+/* Project Cards */
+.project-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Adjust Project Cards on Hover */
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card h3 {
+    color: #f39c12;
+    margin-bottom: 10px;
+}
+
+/* View Details Button */
+.view-btn {
+    background-color: #f39c12;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.view-btn:hover {
+    background-color: #f57208;
+}
+
+@media (max-width: 768px) {
+    /* Columns stack on top of each other */
+    .columns {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Modal Popup Styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    align-items: center; /* Center modal vertically */
+    justify-content: center; /* Center modal horizontally */
+}
+
+.modal-content {
+    background-color: #333;
+    padding: 30px; /* Adjust padding for better spacing */
+    width: 120%; /* Increase width to occupy more screen space */
+    max-width: 1000px; /* Increase max width */
+    max-height: 90vh; /* Limit max height to 90% of the viewport height */
+    color: white;
+    border-radius: 8px;
+    overflow-y: auto; /* Allow scrolling if content overflows */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); /* Optional shadow for depth */
+}
+
+
+/* Close button for the modal */
+.close {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+}
+
+/* Journal Layout Styling */
+.journal {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Title Styling */
+.journal-content h2#journal-title {
+    color: #f39c12;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+/* Subtitle Styling - Centered */
+.journal-content h3 {
+    color: #f39c12;
+    text-align: center;
+    margin-top: 0;
+    font-size: 1.3em;
+}
+
+/* Paragraph Styling for Better Readability */
+.journal-content p {
+    line-height: 1.8;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Navigation Button Styling */
+.arrow-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.prev-btn, .next-btn {
+    background-color: #f39c12;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 120px; /* Fixed width for alignment */
+    text-align: center;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background-color: #f57208;
+}
+
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+.close:hover {
+    color: #f39c12; /* Adjust color for hover */
+}
+
+
+
+/* Web Development Link Section */
+.web-development-link {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.web-development-link h2 {
+    font-size: 1.8em;
+    color: #f39c12;
+    font-weight: bold;
+}
+
+.web-development-link p a {
+    color: #f39c12;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.web-development-link p a:hover {
+    color: #f57208;
+    text-decoration: underline;
+}
+
+/* Cybersecurity Projects Title */
+.cybersecurity-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cybersecurity-title h2 {
+    font-size: 1.8em;
+    color: #f39c12;
+    font-weight: bold;
+}
+
+
+/* Ensure the section titles and GitHub link are always visible on smaller screens */
+.project-section h2, .project-section a.github-link {
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+    font-size: 1.5em;
+    color: #f39c12;
+    text-decoration: none;
+}
+
+a.github-link:hover {
+    color: #f57208; /* Optional: Hover color for the GitHub link */
+}
+
+/* Project cards adjust to full-width on smaller screens */
+@media (max-width: 768px) {
+    /* Stack project cards vertically */
+    .columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+     /* Adjust project column and card styling */
+     .project-column {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .project-card {
+        width: 100%;
+        margin-bottom: 15px;
+        border-radius: 8px;
+    }
+
+    /* Adjust font and spacing for titles */
+    .project-section h1 {
+        font-size: 2.5em;
+        margin-top: 20px;
+    }
+    .project-section h2, .project-section a.github-link {
+        font-size: 1.2em;
+        margin-bottom: 15px;
+    }
+
+        /* Margin adjustment for GitHub link */
+        .web-development-link, .cybersecurity-title {
+            margin-bottom: 30px;
+        }
+}
+

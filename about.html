@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="public/nav.css">
+    <link rel="stylesheet" href="public/about.css">
+  
+
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/main">Home</a></li>
+            <li><a href="/about">About Me</a></li>
+            <li><a href="/loading">Projects</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- About Me Section -->
+    <section class="about-section">
+        <div class="about-content">
+            <h1>About Me</h1>
+            <div class="bio">
+
+                <img src="public/images/me.jpg" alt="Profile Photo" class="profile-img">
+
+                <p>
+                    Curious and detail-oriented, I possess a unique blend of management experience and robust information technology skills.<br>
+                    My diverse background underscore my adaptability and unwavering commitment to continuous professional development.<br><br>
+                    
+                    Motivated and creative, I embrace each challenge as an opportunity for growth, transforming obstacles into valuable learning experiences.<br><br>
+                    
+               
+                    I thrive in dynamic environments, approaching challenges with a problem-solving mindset and a passion for staying up-to-date with new technologies.<br>
+                    My adaptability allows me to navigate change with ease, and I’m always ready to take on new experiences with enthusiasm and dedication.
+                </p>
+            </div>
+        </div>
+
+        <a href="public/documents/Alessandra Salanitri_IT_ Resume.pdf" class="resume-button">Download My Resume</a>
+
+    </section>
+
+    <script>
+        const menuIcon = document.querySelector('.menu-icon');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+    
+</body>
+</html>
