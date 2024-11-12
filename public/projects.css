@@ -7,10 +7,11 @@
 
 .project-section h1 {
     text-align: center;
-    margin-top: 80px; /* Adjusted for space with navbar */
+    margin-top: 98px; /* Adjusted for space with navbar */
     font-size: 3em;
     color: #f39c12;
     text-shadow: 0 2px 4px rgba(255, 255, 255, 0.8);
+
 }
 
 /* Columns for Projects */

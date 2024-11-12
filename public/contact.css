@@ -6,11 +6,12 @@
     align-items: center;
     min-height: 100vh; /* Ensure the section takes full height */
     color: white;
+    margin-top: 13%;
 }
 
 /* Title: Central, bigger, with shadow */
 .contact-section h1 {
-    font-size: 3.5em;  /* Slightly increase the size for prominence */
+    font-size: 3em;  /* Slightly increase the size for prominence */
     color: #f39c12;
     margin-bottom: 40px;  /* Add more space below the title */
     text-align: center;
@@ -114,13 +115,18 @@
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
+
+    .contact-section h1 {
+        font-size: 2.5em;  /* Slightly increase the size for prominence */
+    }
+
     .contact-content {
         flex-direction: column;
         align-items: center;
     }
 
     .contact-form, .contact-info {
-        width: 100%;
+        width: 80%;
         padding: 20px;
     }
 

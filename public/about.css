@@ -14,7 +14,7 @@
 }
 
 .about-content h1 {
-    font-size: 3.5em;  /* Slightly increase the size for prominence */
+    font-size: 3em;  /* Slightly increase the size for prominence */
     color: #f39c12;
     margin-bottom: 60px;  /* Add more space below the title */
     text-align: center;
@@ -75,7 +75,7 @@
     transform: scale(1.05);
 }
 
-/* Responsive adjustments for smaller screens */
+/* Responsive adjustments for smaller screens such as phones */
 @media (max-width: 768px) {
     .about-section {
         flex-direction: column;
@@ -108,5 +108,121 @@
 
     .resume-button {
         margin-top: 20px; /* Space between the text and button on smaller screens */
+    }
+}
+
+
+/* Styles for 11" to 13" laptops */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .about-section {
+        margin-top: 35%;
+    }
+
+    .about-content h1 {
+        font-size: 2.8em;  /* Slightly increase the size for prominence */
+    }
+
+    .bio {
+        font-size: 1.3em;
+        line-height: 1.6;
+        align-items: flex-start; /* Align top of text and image */
+        margin-left: 3%;
+    }
+    
+    .bio p {
+        flex: 1; /* Ensure the text takes up available space */
+        margin-bottom: 10px; /* Add space between text and the image */
+    }
+    
+    .bio img.profile-img {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        margin-left: 10%;
+        flex-shrink: 0; /* Prevent image from shrinking */
+    }
+    
+    /* Resume Button */
+    .resume-button {
+        padding: 10px 15px;
+        font-size: 1em;
+    }
+}
+
+
+/* Styles for 13" to 15" laptops */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .about-section {
+        margin-top: 20%;
+    }
+
+    .about-content h1 {
+        font-size: 2.8em;  /* Slightly increase the size for prominence */
+    }
+
+    .bio {
+        font-size: 1.3em;
+        line-height: 1.6;
+        align-items: flex-start; /* Align top of text and image */
+        margin-left: 3%;
+    }
+    
+    .bio p {
+        flex: 1; /* Ensure the text takes up available space */
+        margin-bottom: 10px; /* Add space between text and the image */
+    }
+    
+    .bio img.profile-img {
+        border-radius: 50%;
+        width: 290px;
+        height: 290px;
+        margin-left: 10%;
+        flex-shrink: 0; /* Prevent image from shrinking */
+    }
+    
+    /* Resume Button */
+    .resume-button {
+        padding: 10px 19px;
+        font-size: 1em;
+    }
+}
+
+
+
+
+
+/* Styles for 15" to 17" laptops */
+@media (min-width: 1441px) and (max-width: 1600px) {
+    .about-section {
+        margin-top: 10%;
+    }
+
+    .about-content h1 {
+        font-size: 3em;  /* Slightly increase the size for prominence */
+    }
+
+    .bio {
+        font-size: 1.3em;
+        line-height: 1.6;
+        align-items: flex-start; /* Align top of text and image */
+        margin-left: 3%;
+    }
+    
+    .bio p {
+        flex: 1; /* Ensure the text takes up available space */
+        margin-bottom: 10px; /* Add space between text and the image */
+    }
+    
+    .bio img.profile-img {
+        border-radius: 50%;
+        width: 320px;
+        height: 320px;
+        margin-left: 10%;
+        flex-shrink: 0; /* Prevent image from shrinking */
+    }
+    
+    /* Resume Button */
+    .resume-button {
+        padding: 12px 20px;
     }
 }

@@ -6,11 +6,12 @@
     align-items: center;
     height: 100vh;
     padding: 50px;
+    margin-top: 8%;
 }
 
 /* Styling for the Name (H1) */
 .hero-section h1 {
-    font-size: 6em;
+    font-size: 4.5em;
     font-weight: bold;
     color: #fff;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
@@ -30,7 +31,7 @@
 
 /* Subheading (Cybersecurity Analyst & Software Engineer) */
 .hero-section p.profession {
-    font-size: 2.3em;
+    font-size: 2em;
     color: rgba(255, 255, 255, 0.9);
     margin-top: 40px;
     padding-left: 85px;
@@ -97,6 +98,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-top: 55px;
 }
 
 /* Certifications - Titles above each badge */
@@ -116,15 +118,13 @@
     }
 }
 
-
-
 .certification {
     text-align: center;
     width: 200px;
 }
 
 .certification img {
-    width: 180px;
+    width: 150px;
     height: auto;
     margin-top: 5px;
 }
@@ -137,7 +137,7 @@
 }
 
 .certification a {
-    font-size: 1.3em;
+    font-size: 1.2em;
     color: #f39c12;
     text-decoration: none;
     margin-bottom: 10px;
@@ -219,3 +219,100 @@
         font-size: 1.2em;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+/* Medium Screen Adjustments (769px - 1200px) */
+@media (min-width: 769px) and (max-width: 1200px) {
+    /* Hero section adjustments */
+    .hero-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: auto;
+        padding: 40px;
+        margin-top: 25%;
+    }
+
+    /* Name (H1) - Slightly smaller size and adjust margin */
+    .hero-section h1 {
+        font-size: 3.5em;
+        margin-left: 10px;
+    }
+
+    /* Profession (Cybersecurity Analyst & Software Engineer) */
+    .hero-section p.profession {
+        font-size: 1.8em;
+        padding-left: 45px;
+        margin-top: 20px;
+        text-align: left;
+    }
+
+    /* Correct placement of the orange line */
+    .hero-section .profession::before {
+        left: 10px; /* Adjust to align with content */
+    }
+
+    /* Tagline adjustments - move directly below the orange line */
+    .tagline {
+        font-size: 1.5em;
+        margin-top: 95px; /* Position directly below the orange line */
+        margin-left: 45px;
+        text-align: left;
+    }
+
+    /* "My Projects" Button adjustments */
+    .cta-button {
+        font-size: 1.3em;
+        padding: 12px 25px;
+        margin-top: 20px;
+        margin-left: 110px;
+    }
+
+    /* Right Side Content: Certifications */
+    .right-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    /* Certifications layout for medium screens */
+    .certifications {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin-right: 0;
+    }
+
+    /* Adjust each certification size */
+    .certification {
+        width: 160px;
+    }
+
+    .certification img {
+        width: 140px;
+        height: auto;
+    }
+
+    /* Certification title font size adjustment */
+    .certification a {
+        font-size: 1.1em;
+    }
+
+    /* Navbar link size adjustment */
+    .nav-links li a {
+        font-size: 1.8em;
+    }
+}
+
